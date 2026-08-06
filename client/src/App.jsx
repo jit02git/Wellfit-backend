@@ -10,6 +10,7 @@ import MemberDashboard from './components/member/MemberDashboard';
 import TrainerDashboard from './components/trainer/TrainerDashboard';
 import BookingsList from './components/shared/BookingsList';
 import MockInbox from './components/shared/MockInbox';
+import ChatbotWidget from './components/common/ChatbotWidget';
 
 export default function App() {
   // Session & User State
@@ -256,6 +257,9 @@ export default function App() {
           </div>
         )}
       </main>
+
+      {/* AI Chatbot Widget */}
+      <ChatbotWidget user={user} />
 
       {/* Footer */}
       <footer className="w-full py-6 mt-12 border-t border-slate-900 bg-slate-950/20 text-center text-xs text-slate-500">

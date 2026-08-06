@@ -9,6 +9,7 @@ import walletRoutes from './routes/walletRoutes.js';
 import slotRoutes from './routes/slotRoutes.js';
 import bookingRoutes from './routes/bookingRoutes.js';
 import notificationRoutes from './routes/notificationRoutes.js';
+import chatRoutes from './routes/chatRoutes.js';
 
 // Load environmental variables
 dotenv.config();
@@ -28,6 +29,7 @@ app.use('/api/wallet', walletRoutes);
 app.use('/api/slots', slotRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/notifications', notificationRoutes);
+app.use('/api/chat', chatRoutes);
 
 // Simple health check endpoint
 app.get('/health', (req, res) => {
